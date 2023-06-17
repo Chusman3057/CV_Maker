@@ -1,0 +1,93 @@
+body {
+    margin: 0 auto;
+}
+
+main {
+    display: flex;
+}
+
+#form {
+    display: flex;
+    justify-content: center;
+    background-color: grey;
+    width: 40%;
+}
+
+form {
+    color: white;
+    width: 95%;
+    font-size: small;
+}
+
+#cv {
+    background-color: white;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 40px;
+    display: none;
+}
+
+#cv div {
+    width: 90%;
+    border: 1px solid black;
+    margin-bottom: 2%;
+    display: none;
+}
+
+h2 {
+    padding: 5px;
+    color: white;
+    background-color: grey;
+    margin-top: 0px;
+    font-size: 1.5em;
+    border: 1px solid black;
+}
+
+#personal th {
+    padding: 10px;
+    display: none;
+}
+
+#personal td {
+    padding-left: 50px;
+}
+
+img {
+    float: right;
+    display: inline;
+    margin: 10px 30px;
+    width: 25%;
+    height: 70%;
+    border: 1px solid black;
+    display: none;
+}
+
+h3 {
+    font-size: medium;
+    text-align: center;
+}
+
+#education td,
+#education th {
+    width: 33%;
+    padding: 10px;
+}
+
+@media print {
+    #form {
+        display: none;
+    }
+
+    #cv {
+        width: 100%;
+    }
+
+    #cv div {
+        width: 100%;
+    }
+}
